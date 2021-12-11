@@ -32,7 +32,7 @@ $currency=$matches[1][$i*3+2];
     }
          
     //echo $amntFixed * ($isEu ? 0.01 : 0.02);
-    echo preg_replace('/(\.\d\d).*/', '$1', $amntFixed * ($isEu ? 0.01 : 0.02)) + 0.01;  
+    echo preg_replace('/(\.\d\d).*/', '$1', $amntFixed * ($isEu ? 0.01 : 0.02)) + 0.01;  //0.46180... should become 0.47
     print "\n";
     $i++;
 }
