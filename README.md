@@ -1,5 +1,4 @@
 # exchangeRates
-exchangeRates
 
 # The code
 
