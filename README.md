@@ -7,7 +7,7 @@
 
 //$pattern = '/"((?:.|n)*?)"s*[:,}]s*/';
 $pattern = '/:"([^"]+)"/';
-preg_match_all($pattern, /*file_get_contents($argv[1])*/file_get_contents("input.txt"), $matches);
+preg_match_all($pattern, file_get_contents($argv[1])/*file_get_contents("input.txt")*/, $matches);
 $z = sizeof($matches[1])/3;
 $i=0;
 
